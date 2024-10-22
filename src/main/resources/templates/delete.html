@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Page</title>
+</head>
+<body>
+<div class="alert alert-danger">
+    <form th:action="@{'/delete/'+${employee.id}}" method="post">
+        <h1>Are you sure want to delete this employee? </h1>
+        <button class="btn btn-danger">Delete</button>
+    </form>
+</div>
+</body>
+</html>
